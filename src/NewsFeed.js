@@ -4,7 +4,7 @@ import "./App.sass";
 const NewsFeed = () => {
   return (
     <div>
-
+        
     </div>
   );
 }

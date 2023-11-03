@@ -3,8 +3,12 @@ import "./App.sass";
 
 const Footer = () => {
   return (
-    <div>
-
+    <div className="footer">
+        <footer>
+            <div>
+                
+            </div>
+        </footer>
     </div>
   );
 }

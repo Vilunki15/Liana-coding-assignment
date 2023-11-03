@@ -8,6 +8,20 @@ body
     border: 0 0
     padding: 0 0 
 
+button
+    background-color: $liana-green
+    color: $backround
+    border-radius: 3px
+    border-bottom: 5px solid $liana-green
+    border-top: 5px solid $liana-green
+    border-left: 10px solid $liana-green
+    border-right: 10px solid $liana-green
+    
+input
+    height: 30px
+    border-radius: 3px
+    border-color: $accent
+                
 
 .header
     display: inline
@@ -27,8 +41,31 @@ body
             display: flex
             list-style: none
             li
-                margin: 0 5px
+                margin: 0 15px
                 img
                     max-height: 30px
-                button
-                    background-color: $liana-green
+
+
+.newsletter    
+    align-items: center
+    text-align: center 
+    .newsletter-form
+        display: flex
+        justify-content: center
+        input
+            margin-right: 15px
+
+
+@media only screen and (max-width: 700px) 
+    .header
+        display: inline
+        .header-lower
+            display: inline
+            justify-content: center
+            ul
+                padding-left: 0
+                justify-content: center
+                li
+                    margin: 0 3px
+
+
