@@ -4,11 +4,14 @@ import Header from "./Header";
 import NewsFeed from "./NewsFeed";
 import Footer from "./Footer";
 import mainImg from "./assets/main.png";
+import companyImg from "./assets/company.jpg";
+import productsImg from "./assets/products.jpg";
+import contactImg from "./assets/contact.jpg";
 
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header />
       <NewsFeed />
       <div className="main-img">
@@ -18,9 +21,29 @@ const App = () => {
           <button>Learn more</button>
         </div>
       </div>
-      <div className="img-buttons">
 
+      <div className="link-img">
+        <div className="img-container">
+          <a href="/"><img src={ companyImg } /></a>
+          <p>Company</p>
+        </div>
+        <div className="img-container">
+          <a href="/"><img src={ productsImg } /></a>
+          <p>Products</p>
+        </div>
+        <div className="img-container">
+          <a href="/"><img src={ contactImg } /></a>
+          <p>Contact</p>
+        </div>
       </div>
+
+      <div className="number-stats">
+        <div className=""></div>
+      </div>
+
+
+
+
 
       <div className="newsletter">
         <h2>Subscribe to our newsletter</h2>

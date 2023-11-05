@@ -6,7 +6,11 @@ $accent: #eceeef
 body
     margin: 0 0
     border: 0 0
-    padding: 0 0 
+    padding: 0 0
+
+.app
+    max-width: 1300px
+    margin: 0 auto
 
 button
     background-color: $liana-green
@@ -16,12 +20,18 @@ button
     border-top: 5px solid $liana-green
     border-left: 10px solid $liana-green
     border-right: 10px solid $liana-green
+    transition: transform .2s
+
+button:hover
+    transform: scale(1.05)
     
 input
     height: 30px
     border-radius: 3px
     border-color: $accent
-                
+
+   
+
 
 .header
     display: inline
@@ -64,11 +74,28 @@ input
         
 
 
-
-
-
-
-
+.link-img
+    margin-top: 30px
+    display: flex
+    justify-content: space-evenly
+    flex-direction: row
+    .img-container
+        position: relative
+        text-align: center
+        transition: transform .2s
+        p 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        a
+            img
+                height: 250px
+                width: 100%
+                object-fit: contain
+                border-radius: 5px
+    .img-container:hover
+        transform: scale(1.05)
 
 
 .newsletter    
@@ -92,5 +119,9 @@ input
                 justify-content: center
                 li
                     margin: 0 3px
+    .link-img
+        flex-direction: column
+        
+        
 
 
