@@ -7,7 +7,20 @@ import mainImg from "./assets/main.png";
 import companyImg from "./assets/company.jpg";
 import productsImg from "./assets/products.jpg";
 import contactImg from "./assets/contact.jpg";
+import businessImg from "./assets/Business.png";
+import faceImg from "./assets/Face.png";
+import publicImg from "./assets/Public.png";
+import { useSpring, animated } from "react-spring";
 
+const NumberAnimator = ({ n }) => {
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: n,
+    delay: 250,
+    config: { mass: 1, tension: 20, friction: 10 },
+  });
+  return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+}
 
 const App = () => {
   return (
@@ -38,8 +51,30 @@ const App = () => {
       </div>
 
       <div className="number-stats">
-        <div className=""></div>
+        <div className="stat-container">
+          <img src={ businessImg }/>
+          <div className="stat-animated-content">
+            <h1><NumberAnimator n={3000} /></h1>
+            <p>Clients</p>
+          </div>
+        </div>
+        <div className="stat-container">
+          <img src={ faceImg }/>
+          <div className="stat-animated-content">
+            <h1><NumberAnimator n={180} /></h1>
+            <p>Employees</p>
+          </div>
+        </div>
+        <div className="stat-container">
+          <img src={ publicImg }/>
+          <div className="stat-animated-content">
+            <h1><NumberAnimator n={10000} /></h1>
+            <p>Daily users</p>
+          </div>
+        </div>
       </div>
+
+
 
 
 
