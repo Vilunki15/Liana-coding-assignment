@@ -29,23 +29,39 @@ button:hover
     
 input
     height: 30px
-    border-radius: 3px
+    border-radius: 5px
     border-color: $accent
+    box-shadow: none
 
-   
+hr  
+    margin-top: 30px
+    border-top: 2px
+    border-color: $accent
+    background-color: $accent
 
+a
+    text-decoration: none
 
 .header
     display: inline
     .header-upper
         background-color: $liana-green
         color: $background
+        padding: 15px
         ul
             display: flex
             justify-content: flex-end
             list-style: none
+            margin: 0 0
             li
                 margin: 0 10px
+                a
+                    font-size: 1.1em
+                    color: $background
+                select
+                    height: 30px
+                    width: 150px
+                    border-radius: 7px
     .header-lower
         display: flex
         justify-content: space-around
@@ -56,6 +72,9 @@ input
                 margin: 0 15px
                 img
                     max-height: 30px
+                a
+                    color: grey
+                    font-size: 1.1em
 
 .main-img
     display: flex
@@ -70,9 +89,11 @@ input
     .img-content
         text-align: center
         position: absolute
-        margin-top: 150px 
-        h2 
+        margin-top: 100px 
+        h1 
             color: $background
+            font-size: 3em
+            font-weight: 5
         
 
 
@@ -85,11 +106,12 @@ input
         position: relative
         text-align: center
         transition: transform .2s
-        p 
+        h2 
             position: absolute
             top: 50%
             left: 50%
             transform: translate(-50%, -50%)
+            color: $background
         a
             img
                 height: 250px
@@ -108,9 +130,11 @@ input
         display: flex
         flex-direction: row
         justify-content: space-around
+        margin: 20px 0
         img 
             height: 54px
             width: 61px
+            padding-right: 30px
         .stat-animated-content
             h1
                 margin: 0 0
@@ -138,8 +162,12 @@ input
             background-color: $background
             text-align: center
             border-radius: 5px
+            padding: 5px 10px
+            overflow: hidden
             h4
                 text-align: center
+            p
+                text-align: start
                 
             
 
@@ -169,12 +197,43 @@ input
 
 .newsletter    
     align-items: center
-    text-align: center 
+    text-align: center
+    margin-bottom: 30px 
     .newsletter-form
         display: flex
         justify-content: center
         input
             margin-right: 15px
+
+
+
+.footer
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    background-color: black
+    color: $background
+    padding-top: 15px
+    .footer-container-left
+        margin-left: 50px
+    .footer-container-right
+        margin-right: 50px
+        ul
+            display: flex
+            flex-direction: row
+            list-style-type: none
+            justify-content: flex-end
+            li
+                margin: 0 10px
+                a
+                    color: $background
+                svg
+                    border: 10px solid $liana-green
+                    border-radius: 50%
+                    background-color: $liana-green
+                    color: $background
+
+
 
 
 @media only screen and (max-width: 700px) 
@@ -188,8 +247,16 @@ input
                 justify-content: center
                 li
                     margin: 0 3px
+    .main-img
+        .img-content
+            margin-top: 50px 
+
     .link-img
         flex-direction: column
+        .img-container
+            a
+                img 
+                    object-fit: cover
     .number-stats
         flex-direction: column
         .stat-container
@@ -208,3 +275,11 @@ input
             .reference-container
                 align-items: center
                 width: 80%
+    .footer
+        flex-direction: column
+        .footer-container-right
+            ul
+                flex-direction: column
+            .social-links
+                flex-direction: row
+                justify-content: center

@@ -1,9 +1,12 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import "./App.sass";
+/* Components: */
 import Header from "./Header";
 import NewsFeed from "./NewsFeed";
 import References from "./References";
 import Footer from "./Footer";
+/* Assets: */
 import mainImg from "./assets/main.png";
 import companyImg from "./assets/company.jpg";
 import productsImg from "./assets/products.jpg";
@@ -11,7 +14,7 @@ import contactImg from "./assets/contact.jpg";
 import businessImg from "./assets/Business.png";
 import faceImg from "./assets/Face.png";
 import publicImg from "./assets/Public.png";
-import { useSpring, animated } from "react-spring";
+
 
 const NumberAnimator = ({ n }) => {
   const { number } = useSpring({
@@ -27,11 +30,11 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      
+
       <div className="main-img">
         <img src={ mainImg } />
         <div className="img-content">
-          <h2>Software fueling digital marketing</h2>
+          <h1>Software fueling digital marketing</h1>
           <button>Learn more</button>
         </div>
       </div>
@@ -39,15 +42,15 @@ const App = () => {
       <div className="link-img">
         <div className="img-container">
           <a href="/"><img src={ companyImg } /></a>
-          <p>Company</p>
+          <h2>Company</h2>
         </div>
         <div className="img-container">
           <a href="/"><img src={ productsImg } /></a>
-          <p>Products</p>
+          <h2>Products</h2>
         </div>
         <div className="img-container">
           <a href="/"><img src={ contactImg } /></a>
-          <p>Contact</p>
+          <h2>Contact</h2>
         </div>
       </div>
 
@@ -75,34 +78,11 @@ const App = () => {
         </div>
       </div>
 
-{/*       <div className="newsfeed">
-        <h2>Latest news</h2>
-        <div className="newsfeed-containers">
-          <div className="newsfeed-container">
-            <p>27.07.2016</p>
-            <h4>Liana Technologies and Encode <br/>
-            Solutions merge to create <br/>
-            unique mobile solutions</h4>
-          </div>
-          <div className="newsfeed-container">
-            <p>28.01.2016</p>
-            <h4>From a local startup to a global <br/>
-            player: Liana Technologies <br/>
-            among the forerunners of <br/>
-            digital marketing technology</h4>
-          </div>
-          <div className="newsfeed-container">
-            <p>02.07.2015</p>
-            <h4>Liana Technologies Hong Kong <br/>
-            launched a series of digital <br/>
-            marketing events in June</h4>
-          </div>
-        </div>
-      </div> */}
-
-
       <NewsFeed />
+
       <References />
+
+      <hr />
 
       <div className="newsletter">
         <h2>Subscribe to our newsletter</h2>
