@@ -2,6 +2,7 @@ import React from "react";
 import "./App.sass";
 import Header from "./Header";
 import NewsFeed from "./NewsFeed";
+import References from "./References";
 import Footer from "./Footer";
 import mainImg from "./assets/main.png";
 import companyImg from "./assets/company.jpg";
@@ -101,7 +102,7 @@ const App = () => {
 
 
       <NewsFeed />
-
+      <References />
 
       <div className="newsletter">
         <h2>Subscribe to our newsletter</h2>
