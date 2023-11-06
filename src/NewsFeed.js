@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.sass";
 
+/* RSS ready content using map variable */
 
 const NewsFeed = () => {
   const newsItems = [

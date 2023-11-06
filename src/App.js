@@ -5,6 +5,7 @@ import "./App.sass";
 import Header from "./Header";
 import NewsFeed from "./NewsFeed";
 import References from "./References";
+import NewsletterForm from "./NewsletterForm";
 import Footer from "./Footer";
 /* Assets: */
 import mainImg from "./assets/main.png";
@@ -15,7 +16,7 @@ import businessImg from "./assets/Business.png";
 import faceImg from "./assets/Face.png";
 import publicImg from "./assets/Public.png";
 
-
+/* Animating numbers with React Spring */
 const NumberAnimator = ({ n }) => {
   const { number } = useSpring({
     from: { number: 0 },
@@ -79,21 +80,9 @@ const App = () => {
       </div>
 
       <NewsFeed />
-
       <References />
-
       <hr />
-
-      <div className="newsletter">
-        <h2>Subscribe to our newsletter</h2>
-        <p>Follor our story and get the latest promotonial <br/>
-        news about our products and events.</p>
-        <div className="newsletter-form">
-            <form><input type="text" placeholder="Your email address" ></input></form>
-            <button>Subscribe</button>
-        </div>
-      </div>
-      
+      <NewsletterForm />
       <Footer />
     </div>
   );

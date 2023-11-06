@@ -5,6 +5,8 @@ import theBodyShop from "./assets/thebodyshopLogo.png";
 import laplandHotels from "./assets/laplandhotelsLogo.png";
 import ikea from "./assets/ikeaLogo.png";
 
+/* Quick updating model, just change the variables */
+
 const References = () => {
   const referenceData = [
     {
