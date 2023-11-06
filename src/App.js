@@ -26,7 +26,7 @@ const App = () => {
   return (
     <div className="app">
       <Header />
-      <NewsFeed />
+      
       <div className="main-img">
         <img src={ mainImg } />
         <div className="img-content">
@@ -74,10 +74,33 @@ const App = () => {
         </div>
       </div>
 
+{/*       <div className="newsfeed">
+        <h2>Latest news</h2>
+        <div className="newsfeed-containers">
+          <div className="newsfeed-container">
+            <p>27.07.2016</p>
+            <h4>Liana Technologies and Encode <br/>
+            Solutions merge to create <br/>
+            unique mobile solutions</h4>
+          </div>
+          <div className="newsfeed-container">
+            <p>28.01.2016</p>
+            <h4>From a local startup to a global <br/>
+            player: Liana Technologies <br/>
+            among the forerunners of <br/>
+            digital marketing technology</h4>
+          </div>
+          <div className="newsfeed-container">
+            <p>02.07.2015</p>
+            <h4>Liana Technologies Hong Kong <br/>
+            launched a series of digital <br/>
+            marketing events in June</h4>
+          </div>
+        </div>
+      </div> */}
 
 
-
-
+      <NewsFeed />
 
 
       <div className="newsletter">

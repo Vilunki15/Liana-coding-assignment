@@ -1,4 +1,4 @@
-$backround: #ffffff
+$background: #ffffff
 $text: #000000
 $liana-green: #4c8930
 $accent: #eceeef
@@ -7,6 +7,8 @@ body
     margin: 0 0
     border: 0 0
     padding: 0 0
+    font-family: 'Roboto', 'Roboto Mono', monospace
+    font-size: 1.1em
 
 .app
     max-width: 1300px
@@ -14,7 +16,7 @@ body
 
 button
     background-color: $liana-green
-    color: $backround
+    color: $background
     border-radius: 3px
     border-bottom: 5px solid $liana-green
     border-top: 5px solid $liana-green
@@ -37,7 +39,7 @@ input
     display: inline
     .header-upper
         background-color: $liana-green
-        color: $backround
+        color: $background
         ul
             display: flex
             justify-content: flex-end
@@ -70,7 +72,7 @@ input
         position: absolute
         margin-top: 150px 
         h2 
-            color: $backround
+            color: $background
         
 
 
@@ -117,12 +119,31 @@ input
             
 
 
-.news
-    
+.newsfeed
+    text-align: center
+    display: inline
+    h2 
+        background-color: $accent
+        margin: 0 0
+        padding: 25px
+    .newsfeed-containers
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        background-color: $accent
+        padding-bottom: 30px
+        .newsfeed-container
+            height: 150px
+            width: 30%
+            background-color: $background
+            text-align: center
+            h4
+                text-align: center
+                
+            
 
-
-
-
+            
+        
 
 .newsletter    
     align-items: center
@@ -147,3 +168,14 @@ input
                     margin: 0 3px
     .link-img
         flex-direction: column
+    .number-stats
+        flex-direction: column
+        .stat-container
+            justify-content: center
+    .newsfeed
+        .newsfeed-containers
+            flex-direction: column
+            align-items: center
+            .newsfeed-container
+                width: 90%
+                margin: 20px 0
